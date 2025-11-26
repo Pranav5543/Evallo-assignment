@@ -1,0 +1,22 @@
+node_modules/
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+
+# environment files
+.env
+backend/.env
+frontend/.env
+
+# build output
+/frontend/build/
+/backend/dist/
+/coverage/
+
+# local tooling
+.vscode/
+.idea/
+*.iml
+

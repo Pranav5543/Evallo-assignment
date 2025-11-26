@@ -1,0 +1,53 @@
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#3751ff;
+  --danger:#ef4444;
+}
+
+*{box-sizing:border-box;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+
+body{margin:0;background:var(--bg);color:#111;}
+
+.app-shell{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;background:radial-gradient(circle at top,#eef2ff,#f6f7fb 55%);}
+
+.auth-single{width:100%;max-width:520px;background:var(--card);border-radius:28px;padding:32px;box-shadow:0 35px 90px rgba(15,23,42,0.15);display:flex;flex-direction:column;gap:24px;}
+.logo-pill{display:inline-flex;padding:6px 12px;border-radius:999px;background:#eef2ff;color:#2b34c5;font-weight:600;font-size:12px;letter-spacing:.06em;margin-bottom:8px;}
+.auth-heading h2{margin:4px 0;}
+.auth-card{border:1px solid #edf0fb;border-radius:18px;padding:24px;background:#fff;box-shadow:0 15px 45px rgba(15,23,42,0.08);}
+.auth-card__single{min-height:380px;display:flex;flex-direction:column;justify-content:space-between;}
+.auth-switch{margin-top:16px;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted);}
+.auth-switch button{border:0;background:transparent;color:var(--accent);font-weight:600;cursor:pointer;}
+
+.form{display:flex;flex-direction:column;gap:10px;}
+.form h2{margin:0;}
+.form input{padding:12px;border-radius:10px;border:1px solid #e2e8f0;font-size:15px;}
+.form input:focus{outline:none;border-color:#b1b9ff;box-shadow:0 0 0 3px rgba(55,81,255,0.15);}
+.form button{padding:12px;border-radius:10px;border:0;background:var(--accent);color:#fff;margin-top:4px;font-weight:600;}
+.form button:hover{background:#2b3ed7;}
+
+.error{color:var(--danger);font-size:13px;}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:var(--card);box-shadow:0 4px 18px rgba(20,20,50,0.04);}
+.brand{font-weight:700;font-size:18px;}
+.controls button{margin-left:8px;padding:8px 12px;border-radius:8px;border:0;background:#eef2ff;color:#111;}
+.btn-quiet{background:transparent;border:0;color:#6b7280;}
+
+.dashboard{min-height:100vh;}
+.main{padding:24px;max-width:1100px;margin:20px auto;}
+
+.panel{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(20,20,50,0.04);margin-bottom:16px;}
+.inline-form{display:flex;gap:8px;flex-wrap:wrap;}
+.inline-form input{flex:1;min-width:160px;padding:10px;border-radius:8px;border:1px solid #eaeef7;}
+.inline-form button{padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;border:0;}
+
+.list{margin-top:12px;display:flex;flex-direction:column;gap:10px;}
+.list-item{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;border:1px solid #f0f2f7;background:linear-gradient(180deg,#fff,#fbfdff);}
+
+.muted{color:var(--muted);margin-top:6px;}
+.small{font-size:12px;}
+.actions button{margin-left:8px;padding:8px;border-radius:8px;border:0;background:#eef2ff;}
+.actions .danger{background:var(--danger);color:#fff;}
+.assign {margin-top:8px;}
+.assign-row{display:flex;align-items:center;gap:12px;padding:8px;border-bottom:1px dashed #f1f3f8;}
